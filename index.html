@@ -89,16 +89,31 @@
             box-shadow: 0 10px 20px rgba(0,0,0,0.1);
         }
 
-	@media (max-width: 768px) {
-    	    .text-md-end {
-                text-align: center !important;
-    	    }
-    
-    	    footer .mb-1 {
-                font-size: 1rem !important;
-                color: #ffffff !important;
-    	    }
+    @media (max-width: 768px) {
+    	.bg-primary {
+            background-color: #0d6efd !important;
     	}
+    
+    	.bg-primary span,
+    	.bg-primary i {
+            color: white !important;
+            font-size: 1.1rem !important;
+    	}
+    
+    	.mb-2 {
+            margin-bottom: 0.7rem !important;
+    	}
+    
+    	/* Ensure footer text is visible */
+    	footer .text-muted {
+            color: #adb5bd !important;
+    	}
+    
+    	footer .mb-1 {
+            color: white !important;
+            font-size: 1rem !important;
+    	}
+    }
     
     </style>
 </head>
@@ -410,7 +425,7 @@
                 </div>
                 <div class="col-md-6 text-md-end">
                     <p class="mb-1">World Financial Group - Transamerica</p>
-                    <p class="mb-1"><i class="fas fa-phone me-2"></i>(267) 456-8675</p>
+                    <p class="mb-1"><i class="fas fa-phone me-2"></i><strong>(267) 456-8675</strong></p>
                     <p class="text-muted small">Licenciado en TX, NJ, PA</p>
                 </div>
             </div>
